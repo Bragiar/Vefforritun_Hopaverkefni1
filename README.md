@@ -1,2 +1,4 @@
-# Vefforritun_Hopaverkefni1
-Hópaverkefni1 
+# Vefforritun_Hopverkefni_1
+Hópaverkefni 1 
+
+Unnið af Arnari Inga Njarðarsyni, Árna Frey Magnússyni og Braga Arnarsyni
