@@ -1,25 +1,148 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <div class ="header">
-      <div class ="heading">
-        <h1>Karfa</h1>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="styles.scss">
+  <title>Karfa</title>
+</head>
+
+
+
+<body>
+
+  <header class="header">
+    <h1>Karfa</h1>
+    <div class="header__sidur">
+      <a href="index.html">Forsíða</a>
+      <a href="pages/products.html">Vörur</a>
+      <a href="pages/staff.html">Starfsfólk</a>
+    </div>
+    <div class="header__pontun">
+      <img src="img/cart.svg">
+      <a href="pages/cart.html">Karfa(3)</a>
+    </div>
+  </header>
+
+
+  <div class="cart__vorur">
+    <div class="cart__vorur__title">
+      <h2>Vörur í körfu</h2>
+    </div>
+
+    <div class="cart__vorur__item">
+      <div class="cart__vorur__item__mynd">
+        <img src="img.jpg">
       </div>
-      <div class ="header__sidur">
-        <a href ="index.html">Forsíða</a>
-        <a href ="pages/products.html">Vörur</a>
-        <a href ="pages/staff.html">Starfsfólk</a>
-      </div>
-      <div class ="header__pontun">
-        <img src="img/cart.svg">
-        <a href ="pages/cart.html">Karfa()</a>
+      <div class="cart__vorur__item__lysing">
+        <div class="cart__vorur__item__text">
+          <h2>Ótrúlegt úr</h2>
+          <p>Hvað er klukkan? Þetta úr mun svara því hvenær sem er</p>
+        </div>
+        <div class="cart__vorur__item__form">
+          <form>
+            Fjöldi:<br />
+            <input type="text" name="fjoldi" value="1">
+            <input type="submit" value="Uppfæra körfu">
+            <input type="submit" value="Eyða úr körfu">
+          </form>
+        </div>
       </div>
     </div>
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="styles.css">
-  </head>
+    <div class="cart__vorur__item">
+      <div class="cart__vorur__item__mynd">
+        <img src="img.jpg">
+      </div>
+      <div class="cart__vorur__item__lysing__title">
+        <h2>Hágæða heyrnatól</h2>
+      </div>
+      <div class="cart__vorur__item__lysing__text">
+        <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?</p>
+      </div>
+      <div class="cart__vorur__item__form">
+        <form>
+          Fjöldi:<br />
+          <input type="text" name="fjoldi" value="1">
+          <button type="submit" value="Uppfæra körfu"></button>
+          <button type="submit" value="Eyða úr körfu"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="cart__upplysingar">
+    <div class="cart__upplysingar__item">
+      <div class="cart__upplysingar__item__title">
+        <h2>Sendingarupplýsingar</h2>
+      </div>
+      <div class="cart__upplysingar__item__content">
+        <form>
+          Nafn:
+          <input type="text" name="nafn">
+          Heimilisfang:
+          <input type="text" name="heimilisfang">
+          Póstnúmer:
+          <select name="postnumer">
+            <option value="0">Velja Póstnúmer</option>
+            <option value="101">101</option>
+            <option value="102">102</option>
+            <option value="103">103</option>
+            <option value="104">104</option>
+            <option value="105">105</option>
+            <option value="107">107</option>
+            <option value="108">108</option>
+            <option value="109">109</option>
+            <option value="110">110</option>
+            <option value="111">111</option>
+            <option value="116">116</option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <div class="cart__upplysingar__item">
+      <div class="cart__upplysingar__item__title">
+        <h2>Greiðsluupplýsingar</h2>
+      </div>
+      <div class="cart__upplysingar__item__content">
+        <form>
+          Kortanúmeter:
+          <input type="text" name="kortanumer">
+          Korthafi:
+          <input type="text" name="korthafi">
+          Gildistími:
+          <select name="manudur">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          Mán
+          <select name="ar">
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+          Ár
+        </form>
+      </div>
+    </div>
+  </div>
   <footer>
     <div class="footer">
       <div class="footer_undirsíður">
@@ -36,7 +159,7 @@
           </ul>
         </div>
         <div class="footer__tveir">
-          <div class="heading">  
+          <div class="heading">
             <h3>Vöruflokkar</h3>
           </div>
           <ul>
@@ -69,8 +192,9 @@
         </div>
       </div>
       <div class="footer_hofundarettur"></div>
-        <p>2018 Vöruhúsið</p>
-      </div>
+      <p>2018 Vöruhúsið</p>
     </div>
   </footer>
+</body>
+
 </html>
