@@ -1,0 +1,85 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.vorur{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.vorur__item{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom:20px;
+}
+.image{
+    width: 100%;
+}
+.vorur__mynd{
+    width: 100%;
+}
+.vorur__lysing{
+    height: 100%;
+}
+.vorur__lysingTitle{
+    margin: 20px 0;
+}
+.vorur__lysingBody{
+    height: 40px;
+}
+.vorur__lysingPrice{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.vorur__fjoldi{
+    width: 70%; 
+    margin-right:10px;  
+}
+.vorur__footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+.btn{
+    border-radius: 2px;
+    text-align: center;
+    font-size: 10px;
+    margin: 4px 2px;
+    display: inline-block;
+    padding: 15px 24px;
+}
+.btn .karfaIcon {
+    background: url(../img/cart.svg) no-repeat;
+    background-size: contain;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}  
+.vorur__footer{
+    align-items: bottom;
+}
