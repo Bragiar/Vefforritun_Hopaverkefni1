@@ -13,12 +13,12 @@ html {
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
 }
-
 main {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1240px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
-
 .vorur{
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +30,7 @@ main {
 .vorur__item{
     display: flex;
     flex-direction: column;
-    width: 33.33%;
+    width: 100%;
     padding-right: 10px;
     padding-left: 10px;
     margin-bottom:20px;
@@ -79,7 +79,23 @@ main {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-}  
+}
+.btnText{
+
+} 
 .vorur__footer{
     align-items: bottom;
+}
+
+/* Media queries */ 
+
+@media (min-width: 500px){
+    .vorur__item{
+        width: 50%;
+    }
+}
+@media (min-width: 800px){
+    .vorur__item{
+        width: 33.33%;
+    }
 }
