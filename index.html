@@ -20,18 +20,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <div class ="header">
-      <div class ="heading">
+      <div class ="headers">
         <h1>Vöruhúsið</h1>
       </div>
-      <div class ="header__sidur">
-        <a href ="index.html">Forsíða</a>
-        <a href ="pages/products.html">Vörur</a>
-        <a href ="pages/staff.html">Starfsfólk</a>
-      </div>
-      <div class ="header__pontun">
-        <img src="img/cart.svg">
-        <a href ="pages/cart.html">Karfa()</a>
+      <link rel="stylesheet" href="styles.css">
+      <div class ="header__undirsíður">
+        <div class ="header__undirsíður__sidur">
+          <a href ="index.html"><u>FORSÍÐA</u></a>
+          <a href ="pages/products.html">VÖRUR</a>
+          <a href ="pages/staff.html">STARFSFÓLK</a>
+        </div>
+        <div class ="header__undirsíður__pontun">
+          <img src="img/cart.svg">
+          <a href ="pages/cart.html">Karfa()</a>
+        </div>
       </div>
     </div>
     <link rel="stylesheet" href="grid.css">
@@ -57,9 +61,9 @@
   </body>
   <footer>
     <div class="footer">
-      <div class="footer_undirsíður">
+      <div class="footer__undirsíður">
         <div class="footer__einn">
-          <div class ="heading">
+          <div class ="headers">
             <h3>Vöruflokkar</h3>
           </div>
           <ul>
@@ -71,7 +75,7 @@
           </ul>
         </div>
         <div class="footer__tveir"> 
-          <div class ="heading"> 
+          <div class ="headers"> 
             <h3>Vöruflokkar</h3>
           </div>
           <ul>
@@ -83,7 +87,7 @@
           </ul>
         </div>
         <div class="footer__þrír">
-          <div class ="heading">
+          <div class ="headers">
             <h3>Vöruflokkar</h3>
           </div>
           <ul>
@@ -93,7 +97,7 @@
           </ul>
         </div>
         <div class="footer__fjórir">
-          <div class ="heading">
+          <div class ="header">
             <h3>Síður</h3>
           </div>
           <ul>
@@ -103,9 +107,7 @@
           </ul>
         </div>
       </div>
-      <div class="footer_hofundarettur"></div>
-        <p>2018 Vöruhúsið</p>
-      </div>
+      <p>&copy 2018 Vöruhúsið</p>
     </div>
   </footer>
 </html>
