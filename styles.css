@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  main {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .header{
+    background-color: #afb281;
+  }
+
+  .header__undirsíður{
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__undirsíður__sidur a{
+    padding: 2rem 1rem 2rem 1rem;
+    float: center;
+    text-decoration: none;
+    color: #000000
+  }
+
+  .header__undirsíður__sidur a:hover{
+    padding: 0.5rem 1rem 1rem 1rem;
+    float: center;
+    text-decoration: none;
+    color: #cee8ff;
+    transition-delay:0.15s;
+  }
+
+  .header__undirsíður__pontun a{
+    float: right;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .header__undirsíður__pontun:hover a{
+    float: right;
+    color:#cee8ff;
+    text-decoration: none;
+    transition-delay:0.15s;
+  }
+
+  .header__undirsíður__pontun img{
+    margin-top: -0.5rem;
+    padding-bottom: -0.5rem;
+    margin-right:0.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  footer{
+    padding: 1rem 2rem 0 2rem;  
+    background-color: #cc9694;
+  }
+  
+  ul{
+    color: #ffffff;
+    font-size: 0.875rem;
+    list-style: none;
+    padding: 0.75rem 0 0.75rem 0; 
+  }
+  
+  .headers{
+    color: #000000; 
+  }
+  
+  h1{
+    text-align: center;
+    padding: 1rem 0 1.5rem 0;   
+    font-size: 4rem;
+  }
+
+  h3{
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .footer__undirsíður{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+  }
+
+  .footer__einn{
+    flex-direction: column;
+  }
+
+  .footer__tveir{
+    flex-direction: column;
+  }
+
+  .footer__þrír{
+    flex-direction: column;
+  }
+
+  .footer__fjórir{
+    flex-direction: column;
+  }
+
+  .footer__hofundarettur{
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  li{
+    text-align: left;
+    padding: 0 0 0.5rem 0;
+  }
+
+  footer a{
+    color: #fcffd2;
+    text-decoration: none;
+  }
+
+  footer a:hover{
+    color: #000000;
+    text-decoration: none;
+    transition-delay:0.15s;
+  }
+
+  footer p{
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+  }
