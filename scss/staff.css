@@ -22,30 +22,23 @@ html {
 .header{
     background-color: #afb281;
   }
-  .headers{
-    font-weight: bold;
+  .header__title{
     color: #000000;
     padding: 20px;
-    text-align: center; 
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
   }
 
-  h2{
-    padding: 3rem 0 1.5rem 0;
-    font-size: 1.5rem;
-  }
-
-  h3{
-    margin: 1rem 0 0.5rem 0;
-    font-size: 1.25rem;
-  }
 
   .header__undirsíður{
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1240px;
+    padding: 0 20px;
   }
 
   .header__undirsíður__sidur{
@@ -74,6 +67,9 @@ html {
 
   .header__undirsíður__pontun{
     float: right;
+    padding-top: 15px;
+    align-self: center;
+    max-width: 100px;
   }
 
   .header__undirsíður__pontun a{
@@ -195,20 +191,22 @@ html {
     padding-left: 10px;
     margin-bottom:20px;
 }
-@media (min-width: 500px){
-    .staff__item{
-        width: 50%;
-    }
-    .staff__lysing{
-        font-size: 2vw;
-    }
-    .staff__nafn{
-        font-size: 4vw;
-    }
-    .staff__info{
-        width: 50vw;
-    }
-}
+
+/* FOOTER */ 
+
+
+h2{
+    padding: 3rem 0 1.5rem 0;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  h3{
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-family: 'Oswald', sans-serif;
+  }
+
 footer{
     width: 100%;  
     background-color: #cc9694;
@@ -221,7 +219,7 @@ footer{
     transition-duration: 0.3s;
     transition-delay:0.15s;
   }
-
+  
   footer a:hover{
     color: #000000;
     text-decoration: none;
@@ -234,58 +232,29 @@ footer{
     text-align: center;
   }
   .footer{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .footer__undirsíður{
     font-size: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    max-width: 1240px;
-    /*margin-left: -10px;
-    margin-right: -10px;*/
-    padding-left: 20px;
-    padding-right: 20px;
-    align-self: center;
-    width: 100%;
+    margin-left: -10px;
+    margin-right: -10px;
   }
-
-  .footer__undirsíður__links1{
+  .footer__header{
+      text-align: start;
+  }
+  .footer__undirsíður__links{
     flex-direction: column;
     justify-content: flex-start;
-    flex: 1;
-    margin-right: 1rem;
+    padding: 0 10px;
+    width: 50%;
     display: flex;
   }
-
-  .footer__undirsíður__links2{
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-    padding-left: 12px; 
-    margin-right: 1rem;
-    display: flex;
-  }
-
-  .footer__undirsíður__links3{
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-    margin-right: 1rem;
-    display: flex;
-  }
-
-  .footer__undirsíður__links4{
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-    margin-right: 1rem;
-    display: flex;
-  }
-
   .footer__hofundarettur{
     font-size: 0.75rem;
     display: flex;
@@ -298,11 +267,49 @@ footer{
     color: #ffffff;
     font-size: 0.875rem;
     list-style: none;
-    padding: 0.75rem 0 0.75rem 0; 
   }
-
 
   li{
     text-align: left;
     padding: 0 0 0.5rem 0;
   }
+
+  /* MEDIA QUERIES */
+@media (min-width: 500px){
+.staff__item{
+    width: 50%;
+}
+.staff__lysing{
+    font-size: 2vw;
+}
+.staff__nafn{
+    font-size: 4vw;
+}
+.staff__info{
+    width: 50vw;
+}
+}
+@media (min-width: 504px){
+    .vorur__item{
+        width: 50%;
+    }
+    .btn{
+        width: 80%;
+    }
+}
+@media (min-width: 810px){
+    .vorur__item{
+        width: 33.33%;
+    }
+    .btn{
+        width: 70%;
+    }
+    .footer__undirsíður__links{
+        width: 25%;
+    }
+}
+@media (min-width: 570px){
+    .header__undirsíður{
+        flex-direction: row;
+    }
+}
