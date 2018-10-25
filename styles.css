@@ -1,4 +1,5 @@
 
+
 * {
     margin: 0;
     padding: 0;
@@ -16,11 +17,13 @@
   
   main {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px; 
   }
 
   head{
-    max-width: 1200px;
+    width:100%
   }
 
   .header{
@@ -28,7 +31,7 @@
   }
 
   .header__undirsíður{
-    margin: 1rem 0 2rem 0;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -37,6 +40,7 @@
   }
 
   .header__undirsíður__sidur{
+    margin: auto;
     float: center;
   }
 
@@ -92,9 +96,9 @@
   }
   
   .header__undirsíður__pontunin a{
+    visibility: hidden;
     float: right;
     color: #000000;
-    visibility: hidden;
     text-decoration: none;
   }
 
@@ -109,7 +113,7 @@
   }
 
   body{
-    max-width: 1200px;
+    width: 100%;
   }
 
   .body{
@@ -280,8 +284,7 @@
   }
 
   footer{
-    max-width: 1200px;
-    padding: 1rem 2rem 0 2rem;  
+    width: 100%;  
     background-color: #cc9694;
   }
 
@@ -304,29 +307,57 @@
     font-size: 0.75rem;
     text-align: center;
   }
-
+  .footer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
   .footer__undirsíður{
     font-size: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    max-width: 1240px;
+    /*margin-left: -10px;
+    margin-right: -10px;*/
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+    width: 100%;
   }
 
-  .footer__einn{
+  .footer__undirsíður__links1{
     flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    margin-right: 1rem;
+    display: flex;
   }
 
-  .footer__tveir{
+  .footer__undirsíður__links2{
     flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    padding-left: 12px; 
+    margin-right: 1rem;
+    display: flex;
   }
 
-  .footer__þrír{
+  .footer__undirsíður__links3{
     flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    margin-right: 1rem;
+    display: flex;
   }
 
-  .footer__fjórir{
+  .footer__undirsíður__links4{
     flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    margin-right: 1rem;
+    display: flex;
   }
 
   .footer__hofundarettur{
