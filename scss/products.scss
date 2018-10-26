@@ -6,17 +6,17 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: calc(-($gutter/2));;
+  margin-right: calc(-($gutter/2));
 }
 
 .vorur__item {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  padding-right: calc($gutter/2);;
+  padding-left: calc($gutter/2);
+  margin-bottom: $gutter;
 }
 
 .image, .vorur__mynd {
@@ -28,17 +28,17 @@
 }
 
 .vorur__lysingTitle {
-  margin: 20px 0;
+  margin: $gutter 0;
 }
 
 .vorur__lysingBody {
-  height: 40px;
+  height: calc(2*$gutter);
 }
 
 .vorur__lysingPrice {
   font-size: 2em;
   font-weight: bold;
-  margin: 20px 0;
+  margin: $gutter 0;
 }
 
 .vorur__footer__fjoldi {
@@ -65,11 +65,11 @@
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
   &:hover {
-    background-color: #cc9694;
+    background-color: $button-color;
   }
   .karfaIcon {
     float: left;
-    width: 20px;
+    width: $gutter;
     margin-right: 5px;
   }
 }

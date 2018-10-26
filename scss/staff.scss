@@ -60,8 +60,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -($gutter/2);
+  margin-right: -($gutter/2);
 }
 
 .staff__item {
@@ -69,9 +69,9 @@
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  padding-right: ($gutter/2);
+  padding-left: ($gutter/2);
+  margin-bottom: $gutter;
 }
 
 /* FOOTER */
