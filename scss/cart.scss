@@ -1,122 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-  &:before, &:after {
-    box-sizing: inherit;
-  }
-}
-
-html {
-  box-sizing: border-box;
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
-  font-size: 16px;
-}
-
-.Cart {
-  margin: 0 auto;
-  max-width: 1240px;
-  padding: 0 20px;
-}
-
-.header {
-  background-color: #afb281;
-  margin-bottom: 20px;
-}
-
-.header__title {
-  color: #000000;
-  padding: 20px;
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5em;
-}
-
-.header__undirsíður {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 1240px;
-  padding: 0 20px;
-}
-
-.header__undirsíður__sidur {
-  margin: auto;
-  a {
-    padding: 2rem 1rem 2rem 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000000;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
-    transition-delay: 0.15s;
-    &:hover {
-      padding: 0.5rem 1rem 1rem 1rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: #cee8ff;
-    }
-  }
-}
-
-.header__undirsíður__pontun {
-  float: right;
-  padding-top: 15px;
-  align-self: center;
-  max-width: 100px;
-  a {
-    float: right;
-    color: #000000;
-    text-decoration: none;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
-    transition-delay: 0.15s;
-  }
-  &:hover a {
-    float: right;
-    color: #cee8ff;
-    text-decoration: none;
-  }
-  img {
-    font-weight: bold;
-    margin-top: -0.5rem;
-    padding-bottom: -0.5rem;
-    margin-right: 0.5rem;
-    width: 2rem;
-    height: 2rem;
-  }
-}
-
-.header__undirsíður__pontunin {
-  float: left;
-  a {
-    visibility: hidden;
-    float: right;
-    color: #000000;
-    text-decoration: none;
-  }
-  img {
-    visibility: hidden;
-    font-weight: bold;
-    margin-top: -0.5rem;
-    padding-bottom: -0.5rem;
-    margin-right: 0.5rem;
-    width: 2rem;
-    height: 2rem;
-  }
-}
-
-@media (min-width: 570px) {
-  .header__undirsíður {
-    flex-direction: row;
-  }
-  .header__undirsíður__pontun img {
-    width: 1rem;
-    height: 1rem;
-  }
-}
 
 .Items {
   display: flex;
@@ -211,6 +92,7 @@ h2 {
     width: 100px;
     height: 32px;
     font-size: 1rem;
+    border: solid 1px grey;
   }
   label {
     width: 100%;
@@ -219,7 +101,7 @@ h2 {
 
 .cart__btn {
   border-radius: 2px;
-  background-color: #ffffff;
+  background-color: $white;
   font-size: 1rem;
   padding: 5px;
   border: solid 1px grey;
@@ -229,7 +111,7 @@ h2 {
 }
 
 .btn:hover {
-  background-color: #cc9694;
+  background-color: $pink;
 }
 
 .karfaIcon {
@@ -277,12 +159,15 @@ h2 {
 .Info__input {
   height: 30px;
   width: 250px;
+  font-size: 1rem;
+  border: solid 1px grey;
 }
 
 .Info__formInput {
   width: 250px;
   display: flex;
   justify-content: space-between;
+  border: solid 1px grey;
 }
 
 .Info__formItem {
@@ -314,102 +199,14 @@ input[type="text"] {
 .Submit__btn {
   width: 250px;
   height: 50px;
-  background-color: #cc9694;
+  background-color: $pink;
   border-radius: 5px;
   font-size: 1rem;
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
   &:hover {
-    background-color: #000000;
+    background-color: $black;
+    color: $pink;
   }
 }
 
-.footer {
-  h2 {
-    padding: 3rem 0 1.5rem 0;
-    font-size: 2em;
-    font-family: 'Oswald', sans-serif;
-  }
-  h3 {
-    margin: 1rem 0 0.5rem 0;
-    font-size: 1.25rem;
-    font-family: 'Oswald', sans-serif;
-  }
-}
-
-footer {
-  width: 100%;
-  background-color: #cc9694;
-  a {
-    color: #fcffd2;
-    text-decoration: none;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
-    transition-delay: 0.15s;
-    &:hover {
-      color: #000000;
-      text-decoration: none;
-    }
-  }
-  p {
-    padding-top: 0.5rem;
-    padding-bottom: 1.5rem;
-    font-size: 0.75rem;
-    text-align: center;
-  }
-}
-
-.footer {
-  margin: 0 auto;
-  max-width: 1240px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.footer__undirsíður {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.footer__header {
-  text-align: start;
-}
-
-.footer__undirsíður__links {
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 0 10px;
-  width: 50%;
-  display: flex;
-}
-
-@media (min-width: 810px) {
-  .footer__undirsíður__links {
-    width: 25%;
-  }
-}
-
-.footer__hofundarettur {
-  font-size: 0.75rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.footer {
-  ul {
-    color: #ffffff;
-    font-size: 0.875rem;
-    list-style: none;
-  }
-  li {
-    text-align: left;
-    padding: 0 0 0.5rem 0;
-  }
-}

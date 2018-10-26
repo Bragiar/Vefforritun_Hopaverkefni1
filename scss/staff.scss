@@ -1,121 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-  &:before, &:after {
-    box-sizing: inherit;
-  }
-}
-
-main {
-  margin: 0 auto;
-  max-width: 1240px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-html {
-  box-sizing: border-box;
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
-  font-size: 16px;
-}
-
-/* Header */
-
-.header {
-  background-color: #afb281;
-}
-
-.header__title {
-  color: #000000;
-  padding: 20px;
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5em;
-}
-
-.header__undirsíður {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 1240px;
-  padding: 0 20px;
-}
-
-.header__undirsíður__sidur {
-  margin: auto;
-  float: center;
-  a {
-    padding: 2rem 1rem 2rem 1rem;
-    font-weight: bold;
-    float: center;
-    text-decoration: none;
-    color: #000000;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
-    transition-delay: 0.15s;
-    &:hover {
-      padding: 0.5rem 1rem 1rem 1rem;
-      font-weight: bold;
-      float: center;
-      text-decoration: none;
-      color: #cee8ff;
-    }
-  }
-}
-
-.header__undirsíður__pontun {
-  float: right;
-  padding-top: 15px;
-  align-self: center;
-  max-width: 100px;
-  a {
-    float: right;
-    color: #000000;
-    text-decoration: none;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
-    transition-delay: 0.15s;
-  }
-  &:hover a {
-    float: right;
-    color: #cee8ff;
-    text-decoration: none;
-  }
-  img {
-    font-weight: bold;
-    margin-top: -0.5rem;
-    padding-bottom: -0.5rem;
-    margin-right: 0.5rem;
-    width: 2rem;
-    height: 2rem;
-  }
-}
-
-.header__undirsíður__pontunin {
-  float: left;
-  a {
-    visibility: hidden;
-    float: right;
-    color: #000000;
-    text-decoration: none;
-  }
-  img {
-    visibility: hidden;
-    font-weight: bold;
-    margin-top: -0.5rem;
-    padding-bottom: -0.5rem;
-    margin-right: 0.5rem;
-    width: 2rem;
-    height: 2rem;
-  }
-}
-
-body {
-  width: 100%;
-}
 
 .image {
   width: 100%;
@@ -178,8 +60,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -($gutter/2);
+  margin-right: -($gutter/2);
 }
 
 .staff__item {
@@ -187,94 +69,12 @@ body {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  padding-right: ($gutter/2);
+  padding-left: ($gutter/2);
+  margin-bottom: $gutter;
 }
 
 /* FOOTER */
-
-h2 {
-  padding: 3rem 0 1.5rem 0;
-  font-size: 2em;
-  font-family: 'Oswald', sans-serif;
-}
-
-h3 {
-  margin: 1rem 0 0.5rem 0;
-  font-size: 1.25rem;
-  font-family: 'Oswald', sans-serif;
-}
-
-footer {
-  width: 100%;
-  background-color: #cc9694;
-  a {
-    color: #fcffd2;
-    text-decoration: none;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
-    transition-delay: 0.15s;
-    &:hover {
-      color: #000000;
-      text-decoration: none;
-    }
-  }
-  p {
-    padding-top: 0.5rem;
-    padding-bottom: 1.5rem;
-    font-size: 0.75rem;
-    text-align: center;
-  }
-}
-
-.footer {
-  margin: 0 auto;
-  max-width: 1240px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.footer__undirsíður {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.footer__header {
-  text-align: start;
-}
-
-.footer__undirsíður__links {
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 0 10px;
-  width: 50%;
-  display: flex;
-}
-
-.footer__hofundarettur {
-  font-size: 0.75rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-ul {
-  color: #ffffff;
-  font-size: 0.875rem;
-  list-style: none;
-}
-
-li {
-  text-align: left;
-  padding: 0 0 0.5rem 0;
-}
 
 /* MEDIA QUERIES */
 @media (min-width: 500px) {
@@ -307,9 +107,6 @@ li {
   }
   .btn {
     width: 70%;
-  }
-  .footer__undirsíður__links {
-    width: 25%;
   }
 }
 
