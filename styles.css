@@ -415,7 +415,7 @@ h2 {
   transition-duration: 0.3s;
   margin-left: 10px; }
 
-.btn:hover {
+.cart__btn:hover {
   background-color: #cc9694; }
 
 .karfaIcon {
@@ -460,8 +460,7 @@ h2 {
 .Info__formInput {
   width: 250px;
   display: flex;
-  justify-content: space-between;
-  border: solid 1px grey; }
+  justify-content: space-between; }
 
 .Info__formItem select {
   font-size: 1rem; }
@@ -508,7 +507,7 @@ footer {
   width: 100%;
   background-color: #cc9694; }
   footer a {
-    color: #ffffff;
+    color: #fcffd2;
     text-decoration: none;
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
