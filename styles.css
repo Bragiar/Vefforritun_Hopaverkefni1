@@ -11,14 +11,10 @@
 html {
   /* stylelint-disable-line */
   box-sizing: border-box;
-  overflow-x: hidden; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-  *:before, *:after {
-    box-sizing: inherit; }
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px; }
 
 main {
   margin: 0 auto;
@@ -26,10 +22,8 @@ main {
   padding-left: 20px;
   padding-right: 20px; }
 
-html {
-  box-sizing: border-box;
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
-  font-size: 16px; }
+head {
+  width: 100%; }
 
 body {
   width: 100%; }
@@ -126,28 +120,6 @@ body {
 @media (min-width: 570px) {
   .header__undirsíður {
     flex-direction: row; } }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-  *:before, *:after {
-    box-sizing: inherit; }
-
-html {
-  box-sizing: border-box;
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
-  font-size: 16px; }
-
-main {
-  margin: 0 auto;
-  max-width: 1240px;
-  padding-right: 20px;
-  padding-left: 20px; }
-
-/* BODY */
-body {
-  width: 100%; }
 
 /* VÖRURNAR */
 .vorur {
@@ -256,30 +228,6 @@ body {
   .vorur__lysingTitle {
     font-size: 1em; } }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-  *:before, *:after {
-    box-sizing: inherit; }
-
-html {
-  box-sizing: border-box;
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
-  font-size: 16px; }
-
-main {
-  margin: 0 auto;
-  max-width: 1240px;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-head {
-  width: 100%; }
-
-body {
-  width: 100%; }
-
 .body {
   display: flex;
   flex-direction: column;
@@ -314,7 +262,7 @@ body {
     width: 100%; }
 
 .body__item__card__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 2.5em;
   padding: 0; }
 
@@ -339,7 +287,7 @@ body {
   padding-left: 2.5rem;
   padding-bottom: 0.8rem;
   padding-right: 2.5rem;
-  color: #000000;
+  color: black;
   width: 40%; }
   .body__item a:hover {
     color: #cc9694;
@@ -371,23 +319,6 @@ ul {
     width: 50%; }
   .body__item:nth-child(2) {
     flex-direction: row; } }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-  *:before, *:after {
-    box-sizing: inherit; }
-
-html {
-  box-sizing: border-box;
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
-  font-size: 16px; }
-
-.Cart {
-  margin: 0 auto;
-  max-width: 1240px;
-  padding: 0 20px; }
 
 .Items {
   display: flex;
@@ -463,11 +394,16 @@ h2 {
   align-items: flex-end;
   flex-wrap: wrap; }
   .Item__button input[type="text"] {
-    width: 100px;
+    width: 50px;
     height: 32px;
-    font-size: 1rem; }
+    font-size: 1rem;
+    border: solid 1px grey; }
   .Item__button label {
     width: 100%; }
+
+@media (min-width: 430px) {
+  .Item__button input[type="text"] {
+    width: 100px; } }
 
 .cart__btn {
   border-radius: 2px;
@@ -518,12 +454,14 @@ h2 {
 .Info__input {
   height: 30px;
   width: 250px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  border: solid 1px grey; }
 
 .Info__formInput {
   width: 250px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border: solid 1px grey; }
 
 .Info__formItem select {
   font-size: 1rem; }
@@ -570,7 +508,7 @@ footer {
   width: 100%;
   background-color: #cc9694; }
   footer a {
-    color: #fcffd2;
+    color: #ffffff;
     text-decoration: none;
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
@@ -692,7 +630,7 @@ li {
   .header__undirsíður__pontunin a {
     visibility: hidden;
     float: right;
-    color: #000000;
+    color: black;
     text-decoration: none; }
   .header__undirsíður__pontunin img {
     visibility: hidden;
