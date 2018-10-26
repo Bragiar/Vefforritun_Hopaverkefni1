@@ -9,7 +9,7 @@ Unnið af:
 - Braga Arnarsyni
   - (bra26@hi.is)
 
-[Hér má sjá verkefnið okkar á heimasvæði háskólans](https://www.google.com)
+[Hér má sjá verkefnið okkar á heimasvæði háskólans](https://notendur.hi.is/bra26/vefforritun/Hopverkefni1/)
 
 # Verkefnalýsing
 ---
