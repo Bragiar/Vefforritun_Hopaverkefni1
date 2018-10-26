@@ -40,7 +40,7 @@
 }
 
 .body__item__card__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: $title-font;
   font-size: 2.5em;
   padding: 0;
 }
@@ -68,16 +68,20 @@
   padding-left: 2.5rem;
   padding-bottom: 0.8rem;
   padding-right: 2.5rem;
+<<<<<<< HEAD
   color: black;
+=======
+  color:$black;
+>>>>>>> 1a42f7f3840b8d634aaa2a1af72a3acb6c517eaf
   width: 40%;
   &:hover {
-    color: #cc9694;
-    background-color: #000000;
+    color: $pink;
+    background-color:$black;
   }
 }
 
 ul {
-  color: #ffffff;
+  color:$white;
   font-size: 0.875rem;
   list-style: none;
   padding: 0.75rem 0 0.75rem 0;

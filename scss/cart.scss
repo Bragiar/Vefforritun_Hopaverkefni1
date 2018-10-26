@@ -101,7 +101,7 @@ h2 {
 
 .cart__btn {
   border-radius: 2px;
-  background-color: #ffffff;
+  background-color: $white;
   font-size: 1rem;
   padding: 5px;
   border: solid 1px grey;
@@ -111,7 +111,7 @@ h2 {
 }
 
 .btn:hover {
-  background-color: #cc9694;
+  background-color: $pink;
 }
 
 .karfaIcon {
@@ -199,14 +199,14 @@ input[type="text"] {
 .Submit__btn {
   width: 250px;
   height: 50px;
-  background-color: #cc9694;
+  background-color: $pink;
   border-radius: 5px;
   font-size: 1rem;
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
   &:hover {
-    background-color: #000000;
-    color: #cc9694;
+    background-color: $black;
+    color: $pink;
   }
 }
 
