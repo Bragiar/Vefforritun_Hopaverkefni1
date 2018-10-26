@@ -89,13 +89,18 @@ h2 {
   align-items: flex-end;
   flex-wrap: wrap;
   input[type="text"] {
-    width: 100px;
+    width: 50px;
     height: 32px;
     font-size: 1rem;
     border: solid 1px grey;
   }
   label {
     width: 100%;
+  }
+}
+@media (min-width: 430px){
+  .Item__button input[type="text"]{
+    width: 100px;
   }
 }
 
