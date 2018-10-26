@@ -4,7 +4,7 @@
   "description": "Hopverkefni 1",
   "main": "run.js",
   "scripts": {
-    "test": "skip"
+    "sass": "node-sass styles.scss styles.css"
   },
   "repository": {
     "type": "git",
