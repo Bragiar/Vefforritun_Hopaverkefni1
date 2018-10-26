@@ -9,7 +9,7 @@ Unnið af:
 - Braga Arnarsyni
   - (bra26@hi.is)
 
-[Hér má sjá verkefnið okkar á heimasvæði háskólans](https://www.google.com)
+[Hér má sjá verkefnið okkar á heimasvæði háskólans](https://notendur.hi.is/bra26/vefforritun/Hopverkefni1/)
 
 # Verkefnalýsing
 ---
@@ -27,7 +27,7 @@ Unnið af:
 - `Staff.scss`
 - `Cart.scss`
 
-í .scss möppunni ásamt `config.scss` sem skilgreinir breytur og `header.scss` og `footer.scss` sem eiga við staðlaðan haus og fót allra síðnanna.
+Í .scss möppunni ásamt `config.scss` sem skilgreinir breytur og `header.scss` og `footer.scss` sem eiga við staðlaðan haus og fót allra síðnanna.
 
 
 
@@ -41,6 +41,8 @@ Kóðinn í html er eins upp settur á öllum síðum, skiptist í header, main 
 Grunnstærð leturs er `16px` og litapallettan er `#000000`, `#ffffff`, `#afb281`, `#cee8ff`, `#fcffd2` og `#cc9694` og við útbjóum breytur fyrir hvern lit í sass; `$black`, `$white`, `$green`, `$lightblue`, `$yellow` og `$pink`
 Öll bil eru margfeldi af `20px` og það grunnbil er skilgreint með `$gutter`
 
+
+Allar myndir eru geymdar í möppuni `img` og allur texti er geymdur í `efni` möppunni.
 
 ### Haus og fótur
 ---
