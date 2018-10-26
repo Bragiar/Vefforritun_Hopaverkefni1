@@ -14,11 +14,23 @@
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
-
-  // TODO fleiri grunn stillingar
+  box-sizing: border-box;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+main {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+head {
+  width: 100%;
 }
 
-
+body {
+  width: 100%;
+}
 
 // TODO sækja allar sass skrár
 @import "scss/staff";
